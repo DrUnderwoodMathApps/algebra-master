@@ -129,7 +129,6 @@ const [completedTasks, setCompletedTasks] = useState(0);
           const a = randomInt(2, 8);
           const b = randomInt(-10, 10);
           const c = randomInt(1, a - 1); // Ensure a > c so coefficient is positive
-          const d = randomInt(-10, 10);
           
           // Calculate to ensure solution is x
           // ax + b = cx + d
