@@ -4,7 +4,6 @@ import { CheckCircle, XCircle, Trophy, BookOpen, Sparkles } from 'lucide-react';
 const AlgebraApp = () => {
   const [currentLevel, setCurrentLevel] = useState(1);
   const [currentSequence, setCurrentSequence] = useState(0);
-  const [currentTask, setCurrentTask] = useState(0);
   const [userAnswers, setUserAnswers] = useState({});
   const [feedback, setFeedback] = useState({});
 const [completedTasks, setCompletedTasks] = useState(0);
@@ -19,8 +18,6 @@ const [completedTasks, setCompletedTasks] = useState(0);
   const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
   // Helper function to generate a random sign (+ or -)
-  const randomSign = () => Math.random() < 0.5 ? 1 : -1;
-
   // Generate Level 2 problems: (ax+b) + (cx+d) or ax+b + cx+d
   const generateLevel2Problems = () => {
     const problems = [];
