@@ -7,7 +7,7 @@ const AlgebraApp = () => {
   const [currentTask, setCurrentTask] = useState(0);
   const [userAnswers, setUserAnswers] = useState({});
   const [feedback, setFeedback] = useState({});
-  const [completedTasks, setCompletedTasks] = useState(0);
+
   const [showHint, setShowHint] = useState(false);
   const [sequenceComplete, setSequenceComplete] = useState(false);
   const [showLevelSelect, setShowLevelSelect] = useState(true);
